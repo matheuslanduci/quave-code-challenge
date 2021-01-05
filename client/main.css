@@ -1,0 +1,315 @@
+/* Resetting default browser's CSS */
+
+/* 
+  http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Creating a default style */
+
+body {
+  background-color: #bff3f0;
+  color: #5d5d5d;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Styling application */
+
+.container {
+  margin: 0 auto;
+  width: 1024px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .title {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.container .title h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+
+.container .title h2 {
+  margin-top: 4px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.container .select-container {
+  margin-top: 74px;
+  width: 480px;
+}
+
+.container .select-container select {
+  padding-left: 24px;
+  width: 100%;
+  height: 44px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  outline: 0;
+}
+
+.container .summary-container {
+  margin-top: 32px;
+  width: 1024px;
+}
+
+.container .summary-container .summary-box {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.summary-container .summary-box .summary-item {
+  width: 100%;
+  height: 134px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.summary-box .summary-item span {
+  margin-left: 24px;
+}
+
+.container .table-container {
+  margin-top: 44px;
+  width: 1024px;
+}
+
+.table-box {
+  width: 100%;
+  border: 1px solid #5d5d5d;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.table-box th {
+  border-right: 1px solid #5d5d5d;
+}
+
+.table-box thead tr {
+  height: 36px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.table-box thead .table-content {
+  padding: 0 8px;
+  background: #ebf1f2;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table-box tbody .table-content {
+  height: 48px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.table-content td {
+  padding: 0 8px;
+  background: #fff;
+  border-right: 1px solid #5d5d5d;
+  border-bottom: 1px solid #5d5d5d;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#table__full-name {
+  width: 206px;
+}
+
+#table__company {
+  width: 168px;
+}
+
+#table__job-title {
+  width: 158px;
+}
+
+#table__date {
+  width: 180px;
+}
+
+#table__action {
+  width: 140px;
+}
+
+#table__action button {
+  width: 100%;
+  height: 36px;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#table__action button.check-in {
+  background: #47cf73;
+}
+
+#table__action button.check-out {
+  background: #d85e5e;
+}
+
+#table__action button:disabled {
+  background: #5d5d5d;
+  color: #8a8a8a;
+  cursor: not-allowed;
+}
